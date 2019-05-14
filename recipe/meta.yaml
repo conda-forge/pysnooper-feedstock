@@ -24,7 +24,6 @@ requirements:
 test:
   imports:
     - pysnooper
-    - pysnooper.third_party
 
 about:
   home: https://github.com/cool-RR/PySnooper
