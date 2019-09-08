@@ -1,5 +1,5 @@
 {% set name = "PySnooper" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 232c9a660cd1fb835886586e20676b14638c11363dc5d42bc2b574e5cb14bc70
+  sha256: 035767f21744792d606a935833c283031c842e9d0013273e609cf5cf5978fca9
 
 build:
   number: 0
