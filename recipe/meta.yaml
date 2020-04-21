@@ -1,18 +1,18 @@
 {% set name = "PySnooper" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7d7684d9d5cf1d026bba6a52e87009eab9458d3265b13059ab1abaea7eee6c93
+  sha256: ef01ef8f254d61fd496ff4d012cfe4e50444bc6bb62c380dd5eb9ee06ea8583e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
