@@ -5,7 +5,7 @@ Home: https://github.com/cool-RR/PySnooper
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A poor man's debugger for Python.
 
