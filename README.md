@@ -1,11 +1,11 @@
-About pysnooper
-===============
+About pysnooper-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysnooper-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cool-RR/PySnooper
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysnooper-feedstock/blob/main/LICENSE.txt)
 
 Summary: A poor man's debugger for Python.
 
