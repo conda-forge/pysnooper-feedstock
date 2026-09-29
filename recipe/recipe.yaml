@@ -1,19 +1,18 @@
 schema_version: 1
 
 context:
-  name: PySnooper
-  version: "1.2.1"
+  version: 1.2.3
 
 package:
-  name: ${{ name|lower }}
+  name: pysnooper
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: d832ddf26c80440a9456b3a664daff957f737e7313c40b76250ebdb5ccdb6a31
+- url: https://files.pythonhosted.org/packages/source/p/pysnooper/pysnooper-${{ version }}.tar.gz
+  sha256: 1fa1425444a7af45108aaed860b5ca8b62b25bba25b0b037c059ba353d8f1e74
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -21,6 +20,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
+    - setuptools
   run:
     - python >=${{ python_min }}
 
@@ -32,6 +32,15 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - '*'
+  - script:
+      - pytest -vvv tests
+    requirements:
+      run:
+        - pytest
+        - python ${{ python_min }}.*
+    files:
+      source:
+        - tests/
 
 about:
   license: MIT
