@@ -6,3 +6,4 @@ conda_build:
   pkg_format: '2'
 bot:
   automerge: true
+conda_build_tool: rattler-build
